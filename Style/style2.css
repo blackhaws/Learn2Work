@@ -1,0 +1,269 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f7f7f7;
+}
+
+header {
+	background-color: #333;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+nav ul li a:hover {
+	color: #ffffff;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+section {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 2em;
+	margin-bottom: 1em;
+}
+
+h2 {
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+form label {
+	display: block;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom:
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f7f7f7;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+}
+
+/* Estilo da Nav */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/* Estilo do Logo */
+nav img {
+  height: 40px;
+}
+
+/* Estilo do Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Estilo do Botão */
+nav button {
+  background-color: #ff8800;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #ff6600;
+  padding: 12px 24px;
+}
+
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+section {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 2em;
+	margin-bottom: 1em;
+}
+
+h2 {
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+form label {
+	display: block;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+textarea {
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1em;
+  padding-bottom: 100px;
+}
+
+button[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 0.5em 1em;
+	cursor: pointer;
+	font-size: 1.2em;
+	transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+	background-color: #ffc107;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+ul li {
+	margin-bottom: 0.5em;
+}
+
+.fa {
+	margin-right: 0.5em;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1em;
+	margin-top: 1em;
+}
+
+footer p {
+	font-size: 0.8em;
+}
+
+@media (max-width: 767px) {
+	nav ul {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	nav ul li {
+		margin-bottom: 0.5em;
+	}
+
+	nav ul li a {
+		display: block;
+		padding: 0.5em;
+		border-radius: 4px;
+	}
+
+	nav ul li a:hover {
+		background-color: #ffc107;
+	}
+}

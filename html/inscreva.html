@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Inscrição para Empresa XYZ</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		form {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			margin: 50px auto;
+			max-width: 500px;
+			padding: 20px;
+		}
+
+		label {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 5px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"],
+		select,
+		textarea {
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			font-size: 16px;
+			margin-bottom: 20px;
+			padding: 10px;
+			width: 100%;
+		}
+
+		select {
+			background-color: #fff;
+			cursor: pointer;
+		}
+
+		textarea {
+			resize: vertical;
+		}
+
+		button {
+			background-color: #ff8800;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 18px;
+			padding: 10px 20px;
+		}
+
+		button:hover {
+			background-color: #ff6600;
+			}
+		#sobre {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.here {
+  width: 50%;
+}
+
+.here1 {
+  width: 100%;
+}
+
+img {
+	border-radius: 30px;
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+	display: block;
+  margin: auto;
+	
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.botao-saiba-mais {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.botao-saiba-mais:hover {
+  background-color: #0062cc;
+  cursor: pointer;
+}
+
+header {
+	background-color: white;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 0.5em 1em;
+	transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+	background-color: rgb(0, 0, 0);
+	padding: 0.7em 1.2em;
+	border-radius: 4px;
+}
+	</style>
+</head>
+<header>
+	<nav>
+		<ul>
+			<li><a href="Inicio.html">Início</a></li>
+			<li><a href="cursos.html">Cursos</a></li>
+			<li><a href="vaga.html"
+				>Vagas de emprego</a></li>
+			<li><a href="Contatos.html">Contatos</a></li>
+		</ul>
+	</nav>
+</header>
+<body>
+	<section id="sobre">
+		<div class="container">
+			<div class="row">
+				<div class="here here1">
+					<img src="/images/empresa.jpg" alt="Imagem da empresa">
+				</div>
+				<div class="here here1">
+					<h2>Sobre a Empresa</h2>
+        	<p> Somos uma empresa líder no ramo de tecnologia, com mais de 10 anos de experiência no mercado. Temos uma equipe de profissionais qualificados e estamos sempre em busca de novos talentos para integrar nosso time.</p>
+        	<p> O candidato selecionado irá trabalhar em um ambiente dinâmico e inovador, onde terá a oportunidade de desenvolver suas habilidades e crescer profissionalmente.</p>
+				<div class="here here1">
+						<h2>Funções do Candidato</h2>
+						<ul>
+							<li>Desenvolvimento de soluções inovadoras em tecnologia</li>
+							<li>Participação em projetos de grande escala</li>
+							<li>Colaboração com equipes multidisciplinares</li>
+							<li>Análise e resolução de problemas complexos</li>
+							<li>Contribuição para a melhoria contínua dos processos</li>
+							<br>
+					<button class="botao-saiba-mais">Saiba mais</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<h1>Inscrição para Empresa XYZ</h1>
+
+	<form action="submit.php" method="post">
+		<label for="nome">Nome completo:</label>
+		<input type="text" id="nome" name="nome" required>
+
+		<label for="email">E-mail:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="telefone">Telefone:</label>
+		<input type="tel" id="telefone" name="telefone" required>
+
+		<label for="area">Área de interesse:</label>
+		<select id="area" name="area">
+			<option value="ti">Tecnologia da Informação</option>
+			<option value="rh">Recursos Humanos</option>
+			<option value="adm">Administração</option>
+			<option value="vendas">Vendas</option>
+		</select>
+
+		<label for="mensagem">Mensagem:</label>
+		<textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    
+    <label for="curriculo">Currículo:</label>
+        <input type="file" name="curriculo" id="curriculo" required>
+  <br><br>
+		<button type="submit">Enviar</button>
+	</form>
+  
+</body>
+</html>

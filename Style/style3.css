@@ -1,0 +1,178 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background e fonte */
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+}
+
+/* Estilo da Nav */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/* Estilo do Logo */
+nav img {
+  height: 40px;
+}
+
+/* Estilo do Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Estilo do Botão */
+nav button {
+  background-color: #ff8800;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #ff6600;
+  padding: 12px 24px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("/images/logo.png");
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.banner h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.banner button {
+  background-color: #ff8800;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.banner button:hover {
+  background-color: #ff6600;
+}
+
+/* Features Section */
+.features {
+  background-color: #f7f7f7;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features h3 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.features div {
+  flex-basis: 30%;
+}
+
+.features div h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.features div p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  background-color: #262626;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 16px;
+}
